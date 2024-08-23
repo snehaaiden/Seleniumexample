@@ -16,13 +16,13 @@ public class SeleniumBasics {
 		
 		driver.get("https://www.google.com");
 		
-		String title= driver.getTitle();// to grab
+		String title= driver.getTitle();// to get title of page
 		System.out.println(title);
 		
-		String URL=driver.getCurrentUrl();
+		String URL=driver.getCurrentUrl();//to get current url that is opened in the browser
 		
 		System.out.println(URL);
-		driver.quit();
+		driver.quit();//closed the browser window
 		
 	}
 
