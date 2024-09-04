@@ -8,11 +8,13 @@ public class SeleniumBasics {
 
 	public static void main(String[] args) {
 		
-		//ctrl+shift+o
+		//ctrl+shift+o, WebDriver is an interface
 		WebDriver driver = new ChromeDriver();//object created
+	
+		//driver.manage().window().maximize();;
 		
 		driver.manage().window().maximize();//window maximized
-		//driver.get("https://www.flipkart.com");//flippcart opened
+		driver.get("https://www.flipkart.com");//flippcart opened
 		
 		driver.get("https://www.google.com");
 		
@@ -22,8 +24,8 @@ public class SeleniumBasics {
 		String URL=driver.getCurrentUrl();//to get current url that is opened in the browser
 		
 		System.out.println(URL);
-		driver.quit();//closed the browser window
-		
+		driver.quit();//closed the browser window*/
+	
 	}
 
 }
